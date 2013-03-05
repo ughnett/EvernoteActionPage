@@ -1,6 +1,6 @@
 $TextColor: white;
 $ActionStepColor: #79CDCD;
-$BackburnerColor: #C0C0C0;
+$BackburnerColor: #9A9A9A;
 
 body {
 	background-image: url(background.png);
@@ -26,7 +26,6 @@ body {
 	@include ActionElement($BackburnerColor);
 
 	height: 130px;
-	background: linear-gradient(to bottom, darken($BackburnerColor, 20%), $BackburnerColor);
 }
 
 #ActionTable {
