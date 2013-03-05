@@ -1,0 +1,49 @@
+$TextColor: white;
+$ActionStepColor: #79CDCD;
+$BackburnerColor: #C0C0C0;
+
+body {
+	background-image: url(background.png);
+	background-repeat: repeat;
+}
+
+@mixin ActionElement($bgcolor) {
+	background: $bgcolor;
+	color: $TextColor;
+
+	vertical-align: text-top;
+	padding: 5px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+#ActionStep {
+	@include ActionElement($ActionStepColor);
+	height: 80px;
+}
+
+#Backburner {
+	@include ActionElement($BackburnerColor);
+
+	height: 130px;
+	background: linear-gradient(to bottom, darken($BackburnerColor, 20%), $BackburnerColor);
+}
+
+#ActionTable {
+	width: 100%;
+	border-spacing: 5px;
+}
+
+#DocumentTable {
+	width: 100%;
+}
+
+
+#ActionColumn {
+	width: 30%;
+	vertical-align: text-top;
+}
+
+#NoteColumn {
+	vertical-align: text-top;
+}
