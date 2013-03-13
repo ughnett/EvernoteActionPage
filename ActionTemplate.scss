@@ -17,7 +17,7 @@ body {
 	-moz-border-radius: 5px;
 }
 
-#ActionStep {
+.ActionStep {
 	@include ActionElement($ActionStepColor);
 	height: 80px;
 }
