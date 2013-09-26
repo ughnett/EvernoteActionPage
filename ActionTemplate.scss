@@ -2,11 +2,6 @@ $TextColor: white;
 $ActionStepColor: #79CDCD;
 $BackburnerColor: #9A9A9A;
 
-body {
-	background-image: url(background.png);
-	background-repeat: repeat;
-}
-
 @mixin ActionElement($bgcolor) {
 	background: $bgcolor;
 	color: $TextColor;
